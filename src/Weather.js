@@ -4,7 +4,8 @@ import "./Weather.css";
 
 export default function Weather() {
    const apiKey = "d773f6cbefee55a5ba39025c971004bf";
-   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London,uk&&appid=${apiKey}`
+   const city = "London";
+   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
    return <div className="Weather">
         <form>
