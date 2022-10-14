@@ -63,7 +63,7 @@ return (
     } else {
    const apiKey = "d773f6cbefee55a5ba39025c971004bf";
    const city = "London";
-   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&uniys=metric`;
+   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
    axios.get(apiUrl).then(handleResponse);
    
    return "Loading"
